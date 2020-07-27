@@ -56,7 +56,7 @@ public class ScreenShot {
     	
         driver.get("https://programesecure.com");
         driver.manage().window().maximize();     
-     	Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE, 1000, true).save("E:\\NewElementScreenshot.jpeg");  
+        Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE_SCROLL_AND_STITCH, 1000, true).save("E:\\NewElementScreenshot.jpeg");
         driver.close();
         
       
